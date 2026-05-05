@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://y8hpmiuwwxgm"]
+
+[ext_resource type="Texture2D" uid="uid://cv4nl7tdefs1a" path="res://Assets/Crab.png" id="1_ouv02"]
+[ext_resource type="Script" uid="uid://b3h6wo0crtra3" path="res://Code/crab.gd" id="1_xv5wx"]
+
+[node name="Crab" type="Area2D" unique_id=1315728947 groups=["crab"]]
+script = ExtResource("1_xv5wx")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=882062558]
+texture = ExtResource("1_ouv02")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=810377111]
+polygon = PackedVector2Array(-13, 8, -13, 6, -13, 4, -13, 2, -11, 2, -11, 0, -9, 0, -9, -2, -11, -2, -11, -6, -9, -6, -9, -8, -3, -8, -3, -6, -5, -6, -5, -4, -7, -4, -7, -2, -3, -2, -3, -4, -1, -4, -1, -2, 1, -2, 1, -4, 3, -4, 3, -2, 7, -2, 7, -4, 5, -4, 5, -6, 3, -6, 3, -8, 9, -8, 9, -6, 11, -6, 11, -2, 9, -2, 9, 0, 11, 0, 11, 2, 13, 2, 13, 4, 13, 6, 13, 8, 11, 8, 9, 8, -9, 8, -11, 8)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dimfa26osj15y"]
+
+[ext_resource type="Script" uid="uid://cttc6pgl2tt7n" path="res://Code/player.gd" id="1_kyqiw"]
+[ext_resource type="Texture2D" uid="uid://cng6cawmtu7x8" path="res://Assets/Octopus.png" id="1_rpqav"]
+
+[node name="Player" type="CharacterBody2D" unique_id=2084896489 groups=["player"]]
+script = ExtResource("1_kyqiw")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1352363809]
+texture = ExtResource("1_rpqav")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=307236163]
+polygon = PackedVector2Array(-7, -6, -7, -6, -5, -6, -5, -8, 5, -8, 5, -6, 7, -6, 7, 10, 5, 10, 5, 2, 3, 2, 3, 8, 1, 8, 1, 2, -1, 2, -1, 10, -3, 10, -3, 2, -5, 2, -5, 8, -7, 8)

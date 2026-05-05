@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://de1ipqc6it3yt"]
+
+[ext_resource type="PackedScene" uid="uid://y8hpmiuwwxgm" path="res://Code/crab.tscn" id="1_j8rka"]
+[ext_resource type="PackedScene" uid="uid://d3l5gs04b7w6d" path="res://Code/bubble.tscn" id="2_nvrtv"]
+[ext_resource type="PackedScene" uid="uid://dimfa26osj15y" path="res://Code/player.tscn" id="3_gh40q"]
+
+[node name="Game" type="Node2D" unique_id=958555299]
+
+[node name="Crab" parent="." unique_id=1813752238 instance=ExtResource("1_j8rka")]
+position = Vector2(13, 64)
+
+[node name="Bubble1" parent="." unique_id=1426967024 instance=ExtResource("2_nvrtv")]
+position = Vector2(14, 14)
+
+[node name="Bubble2" parent="." unique_id=1079137829 instance=ExtResource("2_nvrtv")]
+position = Vector2(242, 14)
+
+[node name="Bubble3" parent="." unique_id=1479533041 instance=ExtResource("2_nvrtv")]
+position = Vector2(14, 114)
+
+[node name="Bubble4" parent="." unique_id=1390746951 instance=ExtResource("2_nvrtv")]
+position = Vector2(242, 114)
+
+[node name="Player" parent="." unique_id=156937893 instance=ExtResource("3_gh40q")]
+position = Vector2(128, 64)

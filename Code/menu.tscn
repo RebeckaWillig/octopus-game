@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://dpib86b7em3bd"]
+
+[ext_resource type="Script" uid="uid://vyrngyp2sxvo" path="res://Code/menu.gd" id="1_lnh8u"]
+[ext_resource type="FontFile" uid="uid://brlyuaqljmqp7" path="res://Assets/VCR_OSD_MONO_1.001.ttf" id="2_imlqj"]
+
+[node name="Menu" type="Node2D" unique_id=1063444271]
+script = ExtResource("1_lnh8u")
+
+[node name="Control" type="Control" parent="." unique_id=355717334]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 256.0
+offset_bottom = 128.0
+
+[node name="Label" type="Label" parent="Control" unique_id=317197676]
+layout_mode = 0
+offset_right = 256.0
+offset_bottom = 128.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_imlqj")
+theme_override_font_sizes/font_size = 16
+text = "
+WELCOME TO
+OCTOPUS GAME
+
+PRESS SPACE TO START"
+horizontal_alignment = 1

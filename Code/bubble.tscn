@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://d3l5gs04b7w6d"]
+
+[ext_resource type="Script" uid="uid://dxs0i0um7clve" path="res://Code/bubble.gd" id="1_bfwra"]
+[ext_resource type="Texture2D" uid="uid://dtyji8n313wb0" path="res://Assets/Bubble.png" id="1_fy1yr"]
+
+[node name="Bubble" type="Area2D" unique_id=1861615866 groups=["bubble"]]
+script = ExtResource("1_bfwra")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=473485745]
+texture = ExtResource("1_fy1yr")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1496089745]
+polygon = PackedVector2Array(-6, -2, -6, 2, -4, 2, -4, 4, -2, 4, -2, 6, 2, 6, 2, 4, 4, 4, 4, 2, 6, 2, 6, -2, 4, -2, 4, -4, 2, -4, 2, -6, -2, -6, -2, -4, -4, -4, -4, -2)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
